@@ -1,0 +1,29 @@
+@use '../base/tokens' as *;
+
+.eyebrow {
+  font-family: $f-mono;
+  font-weight: 500;
+  font-size: $fs-eyebrow;
+  letter-spacing: $tr-eyebrow;
+  text-transform: uppercase;
+  color: $c-primary;
+  line-height: $lh-tight;
+}
+
+.h1 {
+  font-family: $f-sans;
+  font-weight: 700;
+  font-size: $fs-h1;
+  letter-spacing: $tr-h1;
+  line-height: $lh-tight;
+
+  .accent { color: $c-accent; }
+}
+.h2 { font-size: $fs-h2; letter-spacing: $tr-h2; line-height: $lh-tight; font-weight: 700; }
+.h3 { font-size: $fs-h3; letter-spacing: $tr-h3; line-height: $lh-tight; font-weight: 700; }
+.h4 { font-size: $fs-h4; line-height: $lh-tight; font-weight: 700; }
+.h5 { font-size: $fs-h5; line-height: $lh-snug; font-weight: 600; }
+
+.lead { font-size: $fs-body; color: $c-text-dim; line-height: $lh-normal; }
+.muted { color: $c-text-mute; }
+.mono  { font-family: $f-mono; }
