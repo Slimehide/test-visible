@@ -8,42 +8,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 
 <header class="site-header">
   <nav class="navbar" aria-label="Primary">
-    <a href="index.html" class="navbar__logo" aria-label="TradeFundrr home">
+    <a href="../index.html" class="navbar__logo" aria-label="TradeFundrr home">
       <img src="../assets/images/logo.svg" alt="logo">
     </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <div class="navbar__nav">
       <span class="has-sub" tabindex="0" aria-haspopup="true">
         Products
         <span class="arrow"><img src="../assets/images/down-arrow.svg" alt="down-arrow"></span>
         <div class="dropdown" role="menu" >
-          <a href="pages/stocks.html" data-cat="stocks">
+          <a href="stocks.html" data-cat="stocks">
             <span class="thumb"><img src="../assets/images/dropdown-1.png" alt="dropdown"></span>
             <span class="body">
               <span class="row"><span class="title">Stocks</span><span class="arrow-right"><img src="../assets/images/dropdown-arrow-right.svg" alt="dropdown-arrow-right"></span></span>
               <span class="desc">Funded stock trading accounts with $25K+ in institutional capital</span>
             </span>
           </a>
-          <a href="pages/options.html" data-cat="options">
+          <a href="options.html" data-cat="options">
             <span class="thumb"><img src="../assets/images/dropdown-2.png" alt="dropdown"></span>
             <span class="body">
               <span class="row"><span class="title">Options</span><span class="arrow-right"><img src="../assets/images/dropdown-arrow-right.svg" alt="dropdown-arrow-right"></span></span>
               <span class="desc">Funded options accounts — multi-leg strategies, real institutional capital</span>
             </span>
           </a>
-          <a href="pages/pricing.html" data-cat="futures">
+          <a href="pricing.html" data-cat="futures">
             <span class="thumb"><img src="../assets/images/dropdown-3.png" alt="dropdown"></span>
             <span class="body">
               <span class="row"><span class="title">Futures</span><span class="arrow-right"><img src="../assets/images/dropdown-arrow-right.svg" alt="dropdown-arrow-right"></span></span>
               <span class="desc">NinjaTrader-powered futures funded accounts from $39/mo</span>
             </span>
           </a>
-          <a href="pages/pricing.html" data-cat="crypto">
+          <a href="pricing.html" data-cat="crypto">
             <span class="thumb"><img src="../assets/images/dropdown-4.png" alt="dropdown"></span>
             <span class="body">
               <span class="row"><span class="title">Crypto</span><span class="arrow-right"><img src="../assets/images/dropdown-arrow-right.svg" alt="dropdown-arrow-right"></span></span>
@@ -52,12 +56,12 @@
           </a>
         </div>
       </span>
-      <a href="index.html#how-it-works">How It Works</a>
-      <a href="pages/about.html">About</a>
+      <a href="../index.html#how-it-works">How It Works</a>
+      <a href="about.html">About</a>
       <a href="#">Blog</a>
       <a href="#">Login</a>
     </div>
-    <a href="pages/pricing.html" class="btn btn--primary navbar__cta">Get Funded <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
+    <a href="pricing.html" class="btn btn--primary navbar__cta">Get Funded <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
   </nav>
 </header>
 
@@ -70,31 +74,19 @@
       <h1 class="hero__title">Trade Every Day. Size Every Setup. <span class="accent">$100K in Buying Power</span> — No PDT Rule.</h1>
       <p class="hero__sub">TradeFundrr gives stocks traders a $25,000 institutional account with 4x leverage — $100,000 in effective buying power. PDT rule doesn't apply. Weekly payouts, backed by T3 Trading Group.</p>
       <div class="btn-row">
-        <a href="pricing.html" class="btn btn--primary">See Stocks Programs <span class="arrow">→</span></a>
+        <a href="pricing.html" class="btn btn--primary">See Stocks Programs <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
         <a href="pricing.html" class="btn btn--glass">See all programs</a>
       </div>
       <div class="tick-row">
-        <span class="tick">PDT rule doesn't apply</span>
-        <span class="tick">4x leverage — $100K buying power</span>
-        <span class="tick">Weekly payouts</span>
+        <span class="tick"><span><img src="../assets/images/check-green-light.svg" alt="check-green-light"></span>PDT rule doesn't apply</span>
+        <span class="tick"><span><img src="../assets/images/check-green-light.svg" alt="check-green-light"></span>4x leverage — $100K buying power</span>
+        <span class="tick"><span><img src="../assets/images/check-green-light.svg" alt="check-green-light"></span>Weekly payouts</span>
       </div>
     </div>
-    <div class="hero__visual" aria-hidden="true">
-      <div class="dashboard">
-        <div class="img" style="display:flex;flex-direction:column;padding:30px;gap:18px">
-          <div style="display:flex;justify-content:space-between;font-family:'Geist Mono';font-size:11px;color:#9ca3af"><span>STOCKS · LIVE</span><span>BP · $100K</span></div>
-          <div style="font-family:'Inter';font-weight:700;font-size:46px;color:#05c4a1;letter-spacing:-2px;line-height:1">$100,000.00</div>
-          <div style="font-size:13px;color:#fff">$25K base × 4x leverage</div>
-          <svg viewBox="0 0 600 200" style="width:100%;height:120px"><polyline fill="none" stroke="#05c4a1" stroke-width="2" points="0,160 60,140 120,150 180,100 240,120 300,80 360,90 420,50 480,65 540,40 600,55"/></svg>
-        </div>
-      </div>
-      <div class="badge">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M12 2 4 6v6c0 5.5 4 10.7 8 12 4-1.3 8-6.5 8-12V6l-8-4z" fill="rgba(5,196,160,0.15)" stroke="#05c4a1" stroke-width="1.6"/>
-          <path d="M9 12.2 11 14.2 15 9.8" stroke="#05c4a1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        </svg>
-        SEC Registered Broker-Dealer
-      </div>
+
+    <div class="media">
+      <p><span><img src="../assets/images/sec-grey.svg" alt="sec-grey"></span> SEC Registered Broker-Dealer</p>
+      <img src="../assets/images/stocks-hero-image.webp" alt="hero-side">
     </div>
   </div>
 </section>
@@ -102,9 +94,48 @@
 <section class="reassurance">
   <div class="container">
     <div class="reassurance__grid">
-      <div class="reassurance__item"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg></span><div><div class="label">600+ Active Funded Traders</div></div></div>
-      <div class="reassurance__item"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 6v6c0 5.5 4 10.7 10 12 6-1.3 10-6.5 10-12V6l-10-4z"/></svg></span><div><div class="label">Weekly Payouts — Every Friday</div></div></div>
-      <div class="reassurance__item"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 17h6v-2H3v2zm0-4h12v-2H3v2zm0-6v2h18V7H3z"/></svg></span><div><div class="label">Scalable to $1M+</div></div></div>
+      <div class="reassurance__item">
+        <span class="ic" aria-hidden="true">
+          <img src="../assets/images/list-icon-1.svg" alt="list-icon">
+        </span>
+        <div>
+          <div class="label">600+ Funded Options Traders</div>
+        </div>
+      </div>
+      <div class="reassurance__item">
+        <span class="ic" aria-hidden="true">
+          <img src="../assets/images/pdt-icon.svg" alt="list-icon">
+        </span>
+        <div>
+          <div class="label">PDT Rule Does Not Apply - Trade Every Day</div>
+        </div>
+      </div>
+      <div class="reassurance__item">
+        <span class="ic" aria-hidden="true">
+          <img src="../assets/images/pc-icon.svg" alt="list-icon">
+        </span>
+        <div>
+          <div class="label">DXTrade + Sterling Trader Pro - Institutional Platforms</div>
+        </div>
+      </div>
+
+      <div class="reassurance__item">
+        <span class="ic" aria-hidden="true">
+          <img src="../assets/images/list-icon-4.svg" alt="list-icon">
+        </span>
+        <div>
+          <div class="label">T3 Trading Group - SEC Registered Broker-Dealer</div>
+        </div>
+      </div>
+
+      <div class="reassurance__item">
+        <span class="ic" aria-hidden="true">
+          <img src="../assets/images/graph-icon.svg" alt="list-icon">
+        </span>
+        <div>
+          <div class="label">4x Leverage - $25K Account, $100K Buying Power</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -113,169 +144,592 @@
   <div class="bg-stars"></div>
   <div class="container">
     <div class="comparison__head">
-      <p class="eyebrow">Why funded stocks at TradeFundrr</p>
-      <h2 class="h2" style="margin-top:30px">Retail Stock Accounts Will Never Pay You Like This. <span style="color:#fc0">Funded Accounts Will.</span></h2>
+      <p class="eyebrow">the retail stocks problem</p>
+      <h2 class="h2">The PDT rule and retail buying power aren't trader problems. <span class="accent">They're infrastructure problems.</span></h2>
+      <p class="lead longer">
+        Your edge isn't the issue. The $25K personal minimum, the 3-trade-per-week limit, and the retail buying power ceiling are structural constraints — and they have a structural solution.
+      </p>
     </div>
+
     <div class="comparison__cards">
       <div class="comparison__card">
-        <div class="head"><span class="label mono">Retail Stock Account</span><span class="amount">$25K min</span></div>
-        <p class="desc">Standard brokerage account</p>
+        <div class="head">
+          <span class="label mono">Retail Stock Trading</span>
+          <span class="amount">$25K</span>
+        </div>
+        <p class="desc">Personal capital required just to avoid the PDT rule</p>
         <ul class="comparison__list comparison__list--bad">
-          <li>PDT rule blocks &gt; 3 day-trades / 5 days under $25K</li>
-          <li>You risk your own capital on every trade</li>
-          <li>Margin calls hit your real money</li>
-          <li>No infrastructure beyond the broker</li>
-          <li>Pay-per-trade economics, not split economics</li>
+          <li><span><img src="../assets/images/grey-close.svg" alt="grey-close"></span>PDT rule — 3 day trades per week unless you maintain $25,000+ in your personal account at all times</li>
+          <li><span><img src="../assets/images/grey-close.svg" alt="grey-close"></span>Retail buying power — personal capital only, restricted margin, limited leverage access</li>
+          <li><span><img src="../assets/images/grey-close.svg" alt="grey-close"></span>Every trade risks your own money — a bad run hits your personal account directly</li>
+          <li><span><img src="../assets/images/grey-close.svg" alt="grey-close"></span>Consumer-grade platforms — not built for the execution speed professional equities traders need</li>
+          <li><span><img src="../assets/images/grey-close.svg" alt="grey-close"></span>No institutional support — one retail trader against the full market infrastructure</li>
         </ul>
       </div>
+
       <div class="comparison__card comparison__card--good">
-        <div class="head"><span class="logo">TradeFundrr Stocks</span><span class="amount amount--accent">$25K–$1M+</span></div>
-        <p class="desc">Real institutional account</p>
+        <div class="head">
+          <img src="../assets/images/logo-colored.svg" alt="logo-colored">
+           <span class="amount">$25,000 x 4x</span>
+        </div>
+        <p class="desc">Real institutional buying power from day one</p>
         <ul class="comparison__list comparison__list--good">
-          <li>PDT does not apply — funded institutional accounts</li>
-          <li>Trade institutional capital, not personal money</li>
-          <li>Capped daily loss — published, predictable</li>
-          <li>SEC-registered broker-dealer infrastructure</li>
-          <li>Weekly payouts on a fixed split</li>
+          <li><span><img src="../assets/images/green-check.svg" alt="green-check"></span>PDT rule doesn't apply — trade firm capital every day, no personal $25K minimum required</li>
+          <li><span><img src="../assets/images/green-check.svg" alt="green-check"></span>$25K institutional account with 4x leverage — $100,000 in effective buying power from day one</li>
+          <li><span><img src="../assets/images/green-check.svg" alt="green-check"></span>Trade firm capital — a losing position hits the firm's risk parameters, not your personal savings</li>
+          <li><span><img src="../assets/images/green-check.svg" alt="green-check"></span>DXTrade or Sterling Trader Pro — the platforms used at institutional trading desks</li>
+          <li><span><img src="../assets/images/green-check.svg" alt="green-check"></span>Weekly payouts when you hit your targets — backed by T3 Trading Group</li>
         </ul>
       </div>
     </div>
-  </div>
-</section>
 
-<section class="real-support">
-  <div class="bg-stars"></div>
-  <div class="container">
-    <div class="real-support__inner" style="grid-template-columns:1fr">
-      <div>
-        <p class="eyebrow">Why TradeFundrr</p>
-        <h2 class="h2" style="margin-top:30px">Three Reasons Stock Day Traders Pick Us.</h2>
+    <div class="buying__power">
+      <img src="../assets/images/blurred-circle.svg" alt="blurred-circle">
+      <span>$25K + 4x</span>
+      <div class="power">
+        <span>$100,000</span>
+        <p>Buying Power</p>
       </div>
-      <div class="grid grid--3" style="margin-top:50px">
-        <div class="card card--feature"><div class="icon">$</div><h3>No PDT, ever</h3><p>Day-trade as many times as you want — funded institutional accounts are exempt.</p></div>
-        <div class="card card--feature"><div class="icon">⚙</div><h3>Real fills, real routing</h3><p>DX Trade execution against the same desk infrastructure the institutional traders use.</p></div>
-        <div class="card card--feature"><div class="icon">💸</div><h3>Weekly cash payouts</h3><p>Settle every Friday on the split you signed up with. No retention games.</p></div>
+      <div class="after">
+        <p>Real institutional buying power from day one</p>
       </div>
     </div>
+    <a href="#how-it-works" class="btn">How TradeFundrr funded accounts work <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
   </div>
 </section>
 
-<section class="plans">
-  <div class="bg-stars"></div>
+<section class="why__us">
+  <div class="container">
+    <p class="eyebrow">why tradefundrr</p>
+    <h2 class="h2">6 reasons serious options traders <br>
+    <span class="accent">choose TradeFundrr.</span></h2>
+
+    <div class="grid">
+      <div class="elem">
+        <span class="icon"><img src="../assets/images/gl-1.svg" alt="gl"></span>
+        <p>SEC-Registered Broker-Dealer Backing</p>
+        <span class="small-desc">
+          TradeFundrr is the only funded stocks platform backed by T3 Trading Group, an SEC-registered broker-dealer. Your weekly payout is backed by a firm with legal capital accountability — not a marketing company's goodwill.
+        </span>
+      </div>
+
+      <div class="elem">
+        <span class="icon"><img src="../assets/images/ilc-2.svg" alt="gl"></span>
+        <p>$100K Effective Buying Power</p>
+        <span class="small-desc">
+          A $25,000 TradeFundrr funded stocks account gives you 4x leverage — $100,000 in effective buying power from day one. No margin complexity, no personal capital requirement, no PDT constraint on your position sizing.
+        </span>
+      </div>
+
+      <div class="elem">
+        <span class="icon"><img src="../assets/images/ilc-3.svg" alt="gl"></span>
+        <p>PDT Rule Does Not Apply</p>
+        <span class="small-desc">
+          TradeFundrr funded stocks accounts trade institutional capital — the PDT rule's $25,000 personal account minimum does not apply. Trade as many times as your strategy requires, every single day.
+        </span>
+      </div>
+
+      <div class="elem">
+        <span class="icon"><img src="../assets/images/ilc-4.svg" alt="gl"></span>
+        <p>DXTrade + Sterling Trader Pro</p>
+        <span class="small-desc">
+          DXTrade for most funded stocks traders — the institutional execution platform built by TastyWorks and ThinkOrSwim developers. Sterling Trader Pro for direct-access professionals who require market maker routing, Level 2 DOM, and hot-key execution at professional scale.
+        </span>
+      </div>
+
+
+      <div class="elem">
+        <span class="icon"><img src="../assets/images/ilc-6.svg" alt="gl"></span>
+        <p>Weekly Payouts — No Delays</p>
+        <span class="small-desc">
+          Stocks funded accounts are payout-eligible in as few as 5 days on Instant Funding. Every payout runs on the weekly cycle, every week — no held-back balances, no delayed processing, backed by T3 Trading Group.
+        </span>
+      </div>
+
+      <div class="elem">
+        <span class="icon"><img src="../assets/images/gl-6.svg" alt="gl"></span>
+        <p>Path to 100% Profit Split</p>
+        <span class="small-desc">
+          The profit split escalates across 6 consecutive payout cycles. Consistent stocks traders who prove disciplined performance are reviewed for the 100% split — and for the path to live T3 institutional capital.
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="plans bigger">
   <div class="container">
     <div class="plans__head">
-      <p class="eyebrow">Stocks programs</p>
-      <h2 class="plans__title h2" style="margin-top:30px">Three Programs, <span class="accent">One Real Account.</span></h2>
+      <p class="eyebrow">Options Programs</p>
+      <h2 class="plans__title h2">
+        <span>Three options programs.</span> <br>
+    Every spec on the table before you buy.
+      </h2>
+      <p class="lead">
+        All three accounts are $25,000 with 4x leverage — $100,000 in effective buying power. <br> PDT rule doesn't apply to any of them.
+      </p>
     </div>
-    <div class="plans__grid" style="grid-template-columns:repeat(3,1fr)">
-      <article class="plans__card"><span class="tag">Evaluation</span><h3>Stocks Evaluation</h3><p class="desc">Pass a published profit target, then convert to live institutional funding.</p><div class="price"><span class="amt">$79</span><span class="per"> /first month</span></div><ul class="features"><li>$25K post-eval account</li><li>No PDT</li><li>Discounted retest</li></ul><a href="pricing.html" class="btn btn--primary btn--block">Start Evaluation →</a></article>
-      <article class="plans__card is-featured"><span class="tag">Instant Funding</span><h3>Stocks Instant Funding</h3><p class="desc">Skip the evaluation. Real institutional account from day one.</p><div class="price"><span class="amt">$149</span><span class="per"> /first month</span></div><ul class="features"><li>$25K equities buying power</li><li>No PDT</li><li>Weekly payouts</li></ul><a href="pricing.html" class="btn btn--primary btn--block">Get Stocks Funding →</a></article>
-      <article class="plans__card"><span class="tag">Pro Trader</span><h3>Stocks Pro Trader</h3><p class="desc">Higher capital tier for traders with track record. Direct desk routing.</p><div class="price"><span class="amt">$349</span><span class="per"> /first month</span></div><ul class="features"><li>$100K+ buying power</li><li>Direct desk routing</li><li>Higher position limits</li></ul><a href="pricing.html" class="btn btn--primary btn--block">Apply for Pro →</a></article>
+
+    <div class="plans__grid">
+      <article class="plans__card">
+        <span class="tag">best value</span>
+        <h3>Stocks Evaluation Account</h3>
+        <span class="small-desc">$25,000 • [TBD trader profile] </span>
+        <div class="price"><span class="amt">TBD</span><span class="per"> /first month</span></div>
+        <div class="btn-box">
+          <a href="options.html" class="btn btn--glass">Get Evaluation Account <span><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
+        </div>
+        <div class="spacer"></div>
+        <div class="includes">
+          <div class="details">
+            <span>details</span>
+            <div class="row">
+              <span>Account size</span>
+              <p>$25,000 · 4x leverage</p>
+            </div>
+            <div class="row">
+              <span>evaluation</span>
+              <p>[Step parameters — TBD from Jason]</p>
+            </div>
+            <div class="row">
+              <span>daily loss limit</span>
+              <p>TBD</p>
+            </div>
+            <div class="row">
+              <span>earliest payout</span>
+              <p>TBD days</p>
+            </div>
+            <div class="row">
+              <span>platform</span>
+              <p>DXTrade</p>
+            </div>
+          </div>
+          <ul class="features">
+            <li><span><img src="../assets/images/include-check.svg" alt="include-check"></span>PDT rule doesn’t apply</li>
+            <li><span><img src="../assets/images/include-check.svg" alt="include-check"></span>Weekly payouts</li>
+          </ul>
+        </div>
+        
+      </article>
+
+      <article class="plans__card is-featured">
+        <div class="popular static">Most Popular</div>
+        <h3>Stocks Instant Funding</h3>
+        <span class="small-desc">$25,000 • Experienced stocks day traders who want immediate account access and the fastest possible path to first payout</span>
+        <div class="price"><span class="amt">TBD</span><span class="per"> /first month</span></div>
+        <div class="btn-box">
+          <a href="stocks.html" class="btn btn--primary btn--block">Get Instant Funding <span><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
+        </div>
+        <div class="spacer"></div>
+        <div class="includes">
+          <div class="details">
+            <span>details</span>
+            <div class="row">
+              <span>account size</span>
+              <p>$1,250</p>
+            </div>
+            <div class="row">
+              <span>profit target</span>
+              <p>$1,000</p>
+            </div>
+            <div class="row">
+              <span>Max drawdown</span>
+              <p>$2,500</p>
+            </div>
+            <div class="row">
+              <span>earliest payout</span>
+              <p>5 days</p>
+            </div>
+            <div class="row">
+              <span>min trade duration</span>
+              <p>15 seconds</p>
+            </div>
+          </div>
+          <ul class="features">
+            <li><span><img src="../assets/images/include-check.svg" alt="include-check"></span>No evaluation</li>
+            <li><span><img src="../assets/images/include-check.svg" alt="include-check"></span>Start trading today</li>
+            <li><span><img src="../assets/images/include-check.svg" alt="include-check"></span>$100K buying power</li>
+          </ul>
+        </div>
+        
+      </article>
+
+      <article class="plans__card">
+        <span class="tag">advanced</span>
+        <h3>Stocks Pro Trader</h3>
+        <span class="small-desc">TBD • [TBD — based on Pro Trader qualification path]</span>
+        <div class="price"><span class="amt">From $39</span><span class="per"> /first month</span></div>
+        <div class="btn-box">
+          <a href="pricing.html" class="btn btn--glass">Get Pro Trader <span><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
+        </div>
+        <div class="spacer"></div>
+        <div class="includes">
+          <div class="details">
+            <span>details</span>
+            <div class="row">
+              <span>TBD</span>
+              <p>TBD</p>
+            </div>
+            <div class="row">
+              <span>TBD</span>
+              <p>TBD</p>
+            </div>
+            <div class="row">
+              <span>TBD</span>
+              <p>TBD</p>
+            </div>
+          </div>
+          <ul class="features">
+            <li><span><img src="../assets/images/include-check.svg" alt="include-check"></span>Pro-level capital access</li>
+            <li><span><img src="../assets/images/include-check.svg" alt="include-check"></span>TBD</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="dbl">
+      <a href="pricing.html" class="btn after-btn">Not sure which program fits you? Talk to our team  <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
+      <a href="pricing.html" class="btn after-btn square">See full stocks pricing  <span class="arrow"><img src="../assets/images/external.svg" alt="btn-arrow"></span></a>
     </div>
   </div>
 </section>
 
-<section class="institutional">
-  <div class="bg-stars"></div>
+
+
+
+<section class="platforms__articles">
   <div class="container">
-    <div class="institutional__row" style="grid-template-columns:1fr 1fr;gap:80px">
-      <div>
-        <p class="eyebrow">The platform</p>
-        <h2 class="h2" style="margin-top:30px">DX Trade. <span style="color:#fc0">Real Fills.</span></h2>
-        <p class="lead" style="margin-top:24px">Your funded stock account routes through the same execution stack the institutional desk uses.</p>
+    <p class="eyebrow">the platforms</p>
+      <h2 class="plans__title h2">
+        <span class="accent">Institutional-grade platforms.</span> <br>
+        The same ones professional <br> stocks desks actually use.
+      </h2>
+
+    <div class="double">
+      <div class="elem">
+        <img src="../assets/images/st1.svg" alt="st">
+        <div class="media">
+          <img src="../assets/images/article-image.webp" alt="article-image">
+        </div>
+        <div class="desc">
+          <div class="top">
+            <p>DXTrade</p>
+            <div class="logo"><img src="../assets/images/ll-1.svg" alt="ll1"></div>
+          </div>
+          <span>stocks, options</span>
+          <p>DXTrade was built by the same development team as TastyWorks and ThinkOrSwim — institutional execution infrastructure from a team that defines professional trading platforms. For stocks traders, that means real-time Level 2 data, professional charting, and execution speed that retail brokerage platforms don't match.</p>
+          <ul>
+            <li><span><img src="../assets/images/check-green.svg" alt="check-green"></span><p><span>Institutional Execution Speed</span> — Real-time order routing built for professional trading workflows</p></li>
+            <li><span><img src="../assets/images/check-green.svg" alt="check-green"></span><p><span>Real-Time Level 2 Data</span> — Full order book depth visible on every trade</p></li>
+            <li><span><img src="../assets/images/check-green.svg" alt="check-green"></span><p><span>Professional Charting</span> — Full technical analysis toolkit, not a retail charting afterthought</p></li>
+            <li><span><img src="../assets/images/check-green.svg" alt="check-green"></span><p><span>Built on TastyWorks / ThinkOrSwim Architecture</span> — Developer lineage that experienced traders recognize immediately</p></li>
+          </ul>
+        </div>
       </div>
-      <div class="institutional__card">
-        <div class="badge">DX</div>
-        <div class="label">Execution stack</div>
-        <ul class="points">
-          <li>DX Trade for execution and order management</li>
-          <li>Level 2 quotes and ECN routing</li>
-          <li>SEC-registered broker-dealer routing</li>
-        </ul>
+
+      <div class="elem">
+         <img src="../assets/images/st1.svg" alt="st">
+        <div class="media">
+          <img src="../assets/images/article-image2.webp" alt="article-image">
+        </div>
+        <div class="desc">
+          <div class="top">
+            <p>Sterling Trader Pro</p>
+            <div class="logo"><img src="../assets/images/ll-2.svg" alt="ll1"></div>
+          </div>
+          <span>stocks - direct access</span>
+          <p>Sterling Trader Pro is the direct-access equities platform used at live institutional trading desks — including T3 Trading Group's own desk. For traders who require market maker routing, Level 2 DOM, and hot-key execution at professional scale, Sterling is the platform that professionals actually use.</p>
+          <p>If you've used direct-access before, you know what this means. If you haven't, DXTrade is likely the better starting point.</p>
+          <ul>
+            <li><span><img src="../assets/images/check-green.svg" alt="check-green"></span><p><span>Direct-Access Market Routing</span>  — Route orders directly to specific market makers and ECNs</p></li>
+            <li><span><img src="../assets/images/check-green.svg" alt="check-green"></span><p><span>Full Level 2 DOM</span> — Complete depth of market visibility at institutional scale</p></li>
+            <li><span><img src="../assets/images/check-green.svg" alt="check-green"></span><p><span>Hot-Key Customization</span> — Fully configurable keyboard shortcuts for professional execution speed</p></li>
+            <li><span><img src="../assets/images/check-green.svg" alt="check-green"></span><p><span>Used at T3's Live Trading Desk</span> — The same platform running at the institutional desk backing TradeFundrr</p></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="payouts">
-  <div class="bg-stars"></div>
+
+
+
+<section class="how-it-works complex long" id="how-it-works">
+  <div class="what-box">
+    <p>X% Profit Split</p>
+    <span>First payout.</span>
+  </div>
   <div class="container">
-    <div class="payouts__head">
-      <p class="eyebrow">The profit split</p>
-      <h2 class="h2" style="margin-top:30px">Up To <span style="color:#fc0">90% To The Trader.</span></h2>
-      <p class="lead" style="margin-top:24px;max-width:600px">Locked at signup. No tier escalation, no retention games.</p>
+    <div class="how-it-works__head">
+      <p class="eyebrow">the profit split</p>
+      <h2 class="how-it-works__title h2">Your profit split increases with every payout. <br>
+      After the 6th, <span class="accent">you keep everything.</span>
+      <p class="lead">Every TradeFundrr options account starts with a profit split that escalates across 6 consecutive payout cycles — ending at 100%.</p>
     </div>
-    <div class="grid grid--3" style="margin-top:40px">
-      <div class="card card--feature"><div class="icon">80</div><h3>Standard</h3><p>80%/20% — Evaluation and Instant Funding accounts.</p></div>
-      <div class="card card--feature"><div class="icon">85</div><h3>Pro</h3><p>85%/15% — Pro Trader tier with track-record onboarding.</p></div>
-      <div class="card card--feature"><div class="icon">90</div><h3>Elite</h3><p>90%/10% — invitation tier for consistent profitable traders.</p></div>
+
+    <div class="bottom__float">
+      <div class="weekly">
+        <span><img src="../assets/images/grey-check.svg" alt="grey-check"></span>
+        <p>After 6 consecutive payouts, options traders are eligible for the 100% profit split — and reviewed for the path to live T3 institutional capital.</p>
+      </div>
+      <div class="desc">
+        <p>The profit split progression isn't a loyalty reward — it's evidence of aligned incentives. <br> TradeFundrr rewards consistent options traders because consistent, disciplined performance is <br> exactly the profile T3 Trading Group was built to identify and back with institutional capital.</p>
+      </div>
+    </div>
+  </div>
+  <img src="../assets/images/complex-profit.svg" alt="payout-back">
+  <div class="bottom__float--mobile bottom__float">
+      <div class="weekly">
+        <span><img src="../assets/images/grey-check.svg" alt="grey-check"></span>
+        <p>After 6 consecutive payouts, options traders are eligible for the 100% profit split — and reviewed for the path to live T3 institutional capital.</p>
+      </div>
+      <div class="desc">
+        <p>The profit split progression isn't a loyalty reward — it's evidence of aligned incentives. <br> TradeFundrr rewards consistent options traders because consistent, disciplined performance is <br> exactly the profile T3 Trading Group was built to identify and back with institutional capital.</p>
+      </div>
+    </div>
+</section>
+
+
+
+<section class="trader-payouts">
+  <div class="container">
+    <div class="trader-payouts__row">
+      <div class="trader-payouts__head">
+        <span class="eyebrow">Real STOCKS TRADERS.</span>
+        <h2 class="h2">Stocks traders getting Funded <br>
+      <span class="accent">and getting paid.</span></h2>
+        <p class="lead">Every testimonial below includes the program type and account attribution — so you know exactly who is being paid and on what program.</p>
+        
+      </div>
+
+      <div class="swiper trader-swiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="trader-card">
+            <div class="trader-card__head">
+              <span class="avatar"></span>
+              <span class="name">Marcus T.</span>
+            </div>
+            <div class="trader-card__amount"><span class="sign">$</span><span class="value">10,000</span></div>
+            <p class="trader-card__program">Options Instant Funding</p>
+            <p class="trader-card__quote">"Pricing was the first thing that made me trust them — every spec was on the table before I signed. No surprises on the payout schedule, no hidden retest fees. Just the cleanest funded options program I've used."</p>
+            <div class="trader-card__stars">
+              <span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="trader-card">
+            <div class="trader-card__head">
+              <span class="avatar"></span>
+              <span class="name">Elena R.</span>
+            </div>
+            <div class="trader-card__amount"><span class="sign">$</span><span class="value">8,420</span></div>
+            <p class="trader-card__program">Stocks Pro Trader</p>
+            <p class="trader-card__quote">"I moved from another prop firm because their rules kept changing. TradeFundrr has been the same pricing, same split, same drawdown rules since I started 6 months ago. Weekly payouts hit my bank every Friday like clockwork."</p>
+            <div class="trader-card__stars">
+              <span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="trader-card">
+            <div class="trader-card__head">
+              <span class="avatar"></span>
+              <span class="name">Jordan K.</span>
+            </div>
+            <div class="trader-card__amount"><span class="sign">$</span><span class="value">6,200</span></div>
+            <p class="trader-card__program">FunderFlex 50K</p>
+            <p class="trader-card__quote">"FunderFlex 50K at $59/month feels almost unfair. NinjaTrader, weekly payouts, real institutional capital backing — I haven't found anyone matching this pricing structure anywhere else in the futures space."</p>
+            <div class="trader-card__stars">
+              <span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="trader-card">
+            <div class="trader-card__head">
+              <span class="avatar"></span>
+              <span class="name">Priya S.</span>
+            </div>
+            <div class="trader-card__amount"><span class="sign">$</span><span class="value">5,180</span></div>
+            <p class="trader-card__program">Options Evaluation</p>
+            <p class="trader-card__quote">"I called support twice in my first month. Both times a real human picked up. That alone made me confident the program is run by people who actually trade, not a marketing team behind a chatbot."</p>
+            <div class="trader-card__stars">
+              <span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="trader-card">
+            <div class="trader-card__head">
+              <span class="avatar"></span>
+              <span class="name">Dominic L.</span>
+            </div>
+            <div class="trader-card__amount"><span class="sign">$</span><span class="value">7,720</span></div>
+            <p class="trader-card__program">Stocks Instant Funding</p>
+            <p class="trader-card__quote">"Instant Funding at $149 is a no-brainer for any serious stocks day trader. No PDT, $100K effective buying power, and weekly payouts. The pricing page made it obvious which plan fits me — no upsell shenanigans."</p>
+            <div class="trader-card__stars">
+              <span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="trader-card">
+            <div class="trader-card__head">
+              <span class="avatar"></span>
+              <span class="name">Aisha N.</span>
+            </div>
+            <div class="trader-card__amount"><span class="sign">$</span><span class="value">4,800</span></div>
+            <p class="trader-card__program">Live Capital Path</p>
+            <p class="trader-card__quote">"I've taken seven payouts in a row on the same program at the same split. After six straight payouts they pulled me into a path-to-live capital review. That progression isn't marketing — it actually happens."</p>
+            <div class="trader-card__stars">
+              <span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span><span><img src="../assets/images/star-green.svg" alt="star-green"></span>
+            </div>
+          </article>
+        </div>
+        </div>
+      </div>
+
+      <div class="trader-payouts__controls">
+          <a href="pages/why-us.html" class="trader-payouts__cta">See all trader stories and payouts <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="arrow"></span></a>
+          <a href="#" class="trader-payouts__rating">
+            <span class="score">4.8</span>
+            <span>Rating on</span>
+            <span class="logo"><img src="../assets/images/trustpilot.svg" alt="Trustpilot"></span>
+          </a>
+        </div>
     </div>
   </div>
 </section>
 
-<section class="payouts">
-  <div class="bg-stars"></div>
+<section class="cta-block middle rays longer" style="background:url('../assets/images/back-rays.webp')">
   <div class="container">
-    <div class="payouts__head"><p class="eyebrow">Real stock traders</p><h2 class="h2" style="margin-top:30px">Funded Stock Traders Getting Paid <span style="color:#fc0">Every Week.</span></h2></div>
-    <div class="grid grid--3" style="margin-top:40px">
-      <div class="card card--feature"><div class="icon">$</div><h3>$6,420 / week 19</h3><p>NVDA / TSLA scalper. Stocks Instant Funding, $25K → $50K scaled.</p></div>
-      <div class="card card--feature"><div class="icon">$</div><h3>$4,180 / week 17</h3><p>Mid-cap momentum. Stocks Evaluation graduate, week 14 funded.</p></div>
-      <div class="card card--feature"><div class="icon">$</div><h3>$11,200 / week 12</h3><p>Earnings runner. Pro Trader account at $100K base.</p></div>
+    <div class="cta-block__inner">
+      <h2 class="cta-block__title">
+       Ready to trade <span class="accent">with $100K in <br>
+      buying power</span> instead of $10K?
+      </h2>
+      <p class="cta-block__sub longer">
+        No PDT restriction, 4x leverage, weekly payouts — backed by T3 Trading Group.
+      </p>
+      <div class="btn-row">
+        <a href="pricing.html" class="btn btn--primary">See stocks programs <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
+        <div class="tick-row">
+          <span class="tick"><span><img src="../assets/images/list-mark.svg" alt="list-mark"></span> PDT rule doesn’t apply</span>
+          <span class="tick"><span><img src="../assets/images/list-mark.svg" alt="list-mark"></span> Weekly payouts</span>
+        </div>
+      </div>
+      
     </div>
   </div>
 </section>
 
-<section class="cta-block">
-  <div class="cta-block__inner">
-    <h2 class="cta-block__title"><span class="accent">Stop Risking Your Own Capital.</span><span style="display:block">Trade Institutional.</span></h2>
-    <p class="cta-block__sub">Skip the retail account. Get into a real institutional stocks account.</p>
-    <div class="btn-row"><a href="pricing.html" class="btn btn--primary">Get Stocks Funding <span class="arrow">→</span></a><a href="#" class="btn btn--glass">Speak to a stocks trader</a></div>
-  </div>
-</section>
 
 <section class="faq">
   <div class="container">
-    <h2 class="faq__title">Stocks Questions, Answered Directly.</h2>
+    <h2 class="faq__title">Stocks traders ask. Straight answers below.</h2>
     <div class="faq__grid">
       <div class="faq__col">
-        <details class="qa" open><summary>Does PDT apply to TradeFundrr stock accounts?<span class="chev"></span></summary><div class="qa__body">No. Funded institutional accounts are exempt from the PDT rule.</div></details>
-        <details class="qa"><summary>What buying power do I get?<span class="chev"></span></summary><div class="qa__body">$25K on Evaluation/Instant Funding, scaling to $1M+ on Pro / Elite tiers.</div></details>
-        <details class="qa"><summary>Are penny stocks allowed?<span class="chev"></span></summary><div class="qa__body">Listed equities only. The exact universe is published before signup.</div></details>
+        <div class="qa opened">
+          <div class="head"><p>Is TradeFundrr a real prop firm — or is this simulated trading?</p><span class="chev-arrow"><img src="../assets/images/faq-arrow.svg" alt="faq-arrow"></span></div>
+          <div class="qa__body" style="display:block;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa.</p></div>
+        </div>
+        <div class="qa">
+          <div class="head"><p>How do payouts actually work? When and how do I get paid?</p><span class="chev-arrow"><img src="../assets/images/faq-arrow.svg" alt="faq-arrow"></span></div>
+          <div class="qa__body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa.</p></div>
+        </div>
+        <div class="qa">
+          <div class="head"><p>Are the trading rules fair — are there hidden rules designed to disqualify me?</p><span class="chev-arrow"><img src="../assets/images/faq-arrow.svg" alt="faq-arrow"></span></div>
+          <div class="qa__body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa.</p></div>
+        </div>
+        <div class="qa">
+          <div class="head"><p>What happens if I fail the evaluation?</p><span class="chev-arrow"><img src="../assets/images/faq-arrow.svg" alt="faq-arrow"></span></div>
+          <div class="qa__body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa.</p></div>
+        </div>
       </div>
       <div class="faq__col">
-        <details class="qa"><summary>What's the daily loss cap?<span class="chev"></span></summary><div class="qa__body">Published per-program before signup. Same number for every account on the program.</div></details>
-        <details class="qa"><summary>How are payouts settled?<span class="chev"></span></summary><div class="qa__body">ACH or wire on Friday, on the split you signed up with.</div></details>
-        <details class="qa"><summary>Can I hold overnight?<span class="chev"></span></summary><div class="qa__body">Yes — overnight positions are permitted within published margin and exposure rules.</div></details>
+        <div class="qa">
+          <div class="head"><p>What trading platforms do you use?</p><span class="chev-arrow"><img src="../assets/images/faq-arrow.svg" alt="faq-arrow"></span></div>
+          <div class="qa__body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa.</p></div>
+        </div>
+        <div class="qa">
+          <div class="head"><p>Can I trade with my existing strategy on a TradeFundrr account?</p><span class="chev-arrow"><img src="../assets/images/faq-arrow.svg" alt="faq-arrow"></span></div>
+          <div class="qa__body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa.</p></div>
+        </div>
+        <div class="qa">
+          <div class="head"><p>Is my money safe — what if TradeFundrr closes?</p><span class="chev-arrow"><img src="../assets/images/faq-arrow.svg" alt="faq-arrow"></span></div>
+          <div class="qa__body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa.</p></div>
+        </div>
+        <div class="qa">
+          <div class="head"><p>What support do I get as a funded trader?</p><span class="chev-arrow"><img src="../assets/images/faq-arrow.svg" alt="faq-arrow"></span></div>
+          <div class="qa__body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa.</p></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <section class="get-started cta-block">
-  <div class="cta-block__inner" style="text-align:left;max-width:680px">
-    <p class="eyebrow">Get started</p>
-    <h2 class="cta-block__title" style="margin-top:30px"><span style="display:block">You’ve Done The Research.</span><span class="accent">Here’s The Next Step.</span></h2>
-    <div class="btn-row" style="justify-content:flex-start"><a href="pricing.html" class="btn btn--primary">View all plans <span class="arrow">→</span></a><a href="#" class="btn btn--glass">Talk to a trader first</a></div>
-  </div>
-</section>
-
-<section class="newsletter">
   <div class="container">
-    <div class="newsletter__card">
-      <div class="newsletter__row">
-        <div><p class="eyebrow">TradeFundrr newsletter</p><h3 class="newsletter__title" style="margin-top:30px"><span style="color:#fc0">Stay ahead of the market.</span><span style="display:block">Stay ahead of the field.</span></h3><p class="newsletter__sub">Payout highlights, trader spotlights, funded account news.</p></div>
-        <form class="newsletter__form"><input type="email" placeholder="Enter your email address…" required><button class="btn btn--primary" type="submit">Subscribe Free</button></form>
+    <div class="cta-block__inner">
+      <p class="eyebrow">get started</p>
+      <h2 class="cta-block__title">
+        <span class="accent">$100K buying power.</span><br>
+        <span>No PDT rule. Weekly payouts.</span>
+      </h2>
+      <p class="cta-block__sub">
+        TradeFundrr stocks accounts are backed by T3 Trading Group, an SEC-registered broker-dealer. $25K funded account with 4x leverage — trade every day, get paid every week.
+      </p>
+      <div class="btn-row">
+        <a href="pricing.html" class="btn btn--primary">See Stocks Programs <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
+        <a href="#" class="btn btn--glass">Compare all stocks programs</a>
       </div>
-      <p class="muted" style="margin-top:18px;font-size:13px">No spam. Unsubscribe anytime.</p>
+      <div class="tick-row">
+        <span class="tick"><span><img src="../assets/images/list-mark.svg" alt="list-mark"></span>PDT rule doesn’t apply</span>
+        <span class="tick"><span><img src="../assets/images/list-mark.svg" alt="list-mark"></span>$100K buying power</span>
+        <span class="tick"><span><img src="../assets/images/list-mark.svg" alt="list-mark"></span>Weekly payouts</span>
+      </div>
+      <div class="broker-desc">
+        <p><span><img src="../assets/images/broker-image.svg" alt="broker-image"></span>SEC Registered Broker-Dealer</p>
+      </div>
     </div>
   </div>
 </section>
+
+
+
+
+<div class="newsletter__wrapper">
+  <img src="../assets/images/rocket-image.png" alt="rocket-image">
+  <div class="container">
+    <div class="outer__newsletter">
+      <span>tradefundrr newsletter</span>
+      <h2><span>Stay ahead of the market.</span> Stay ahead of the field.</h2>
+      <p>Payout highlights, trader spotlights, funded account news, and exclusive promotions — delivered directly to your inbox. Join thousands of traders already on the list.</p>
+      <form action="">
+        <div class="group__input">
+          <input type="text" placeholder="Enter your email address…">
+        </div>
+        <button type="submit" class="btn btn--primary">Subscribe Free</button>
+      </form>
+      <div class="after">
+        <span>No spam. Unsubscribe anytime.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <footer class="site-footer">
   <div class="container">
     <div class="site-footer__top">
       <div class="site-footer__brand">
-        <a href="index.html" class="navbar__logo" aria-label="TradeFundrr">
+        <a href="../index.html" class="navbar__logo" aria-label="TradeFundrr">
           <img src="../assets/images/logo.svg" alt="logo">
         </a>
         <p>Professional funded tracking backed by T3 Trading Group, an SEC registered broker-dealer. Trade with institutional capital.</p>
@@ -328,18 +782,18 @@
         <div class="site-footer__col">
           <h5>Products</h5>
           <ul>
-            <li><a href="pages/stocks.html">Stocks</a></li>
-            <li><a href="pages/options.html">Options</a></li>
-            <li><a href="pages/pricing.html">Futures</a></li>
-            <li><a href="pages/pricing.html">Crypto</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="options.html">Options</a></li>
+            <li><a href="pricing.html">Futures</a></li>
+            <li><a href="pricing.html">Crypto</a></li>
           </ul>
         </div>
         <div class="site-footer__col">
           <h5>Company</h5>
           <ul>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="index.html#how-it-works">How It Works</a></li>
-            <li><a href="pages/why-us.html">Why Us</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="../index.html#how-it-works">How It Works</a></li>
+            <li><a href="why-us.html">Why Us</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Careers</a></li>
           </ul>
@@ -365,7 +819,8 @@
   </div>
 </footer>
 
-
-<script src="../js/main.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>

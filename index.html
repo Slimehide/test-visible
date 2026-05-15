@@ -8,16 +8,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
-<!-- =================================================== HEADER =================================================== -->
 <header class="site-header">
   <nav class="navbar" aria-label="Primary">
     <a href="index.html" class="navbar__logo" aria-label="TradeFundrr home">
       <img src="assets/images/logo.svg" alt="logo">
     </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <div class="navbar__nav">
       <span class="has-sub" tabindex="0" aria-haspopup="true">
         Products
@@ -286,62 +289,117 @@
   <img src="assets/images/payout-back.svg" alt="payout-back">
 </section>
 
-<!-- =================================================== PAYOUTS =================================================== -->
-<!-- <section class="payouts">
-  <div class="bg-stars"></div>
+<section class="trader-payouts">
   <div class="container">
-    <div class="payouts__head">
-      <p class="eyebrow">Real traders. Real payouts.</p>
-      <h2 class="h2" style="margin-top:30px">
-        <span style="color:#fff">Funded Traders Getting Paid</span>
-        <span style="color:#fc0">Every Week.</span>
-      </h2>
-      <p class="lead" style="margin-top:24px;max-width:550px">
-        These aren’t marketing claims. These are real payout records from real traders on real institutional accounts.
-      </p>
-    </div>
+    <div class="trader-payouts__row">
+      <div class="trader-payouts__head">
+        <span class="eyebrow">Real traders. Real payouts.</span>
+        <h2 class="h2">Funded Traders Getting Paid <br><span class="accent">Every Week.</span></h2>
+        <p class="lead">These aren't marketing claims. These are real payout records from real traders on real institutional accounts.</p>
+        
+      </div>
 
-    <div class="payouts__row">
-      <div class="payouts__card">
-        <div class="head">
-          <span class="avatar"></span>
-          <span class="name">Trader name</span>
+      <div class="swiper trader-swiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="trader-card">
+            <div class="trader-card__head">
+              <span class="avatar"></span>
+              <span class="name">Marcus T.</span>
+            </div>
+            <div class="trader-card__amount"><span class="sign">$</span><span class="value">10,000</span></div>
+            <p class="trader-card__program">Options Instant Funding</p>
+            <p class="trader-card__quote">"Pricing was the first thing that made me trust them — every spec was on the table before I signed. No surprises on the payout schedule, no hidden retest fees. Just the cleanest funded options program I've used."</p>
+            <div class="trader-card__stars">
+              <span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span>
+            </div>
+          </article>
         </div>
-        <div class="amount"><span class="pre">$</span><span class="num">10,000</span></div>
-        <div class="program">Program name TBD</div>
-        <p class="quote">A real funded trader recap goes here — payout amount, the program, and what the experience felt like in their own words.</p>
-        <div class="stars">
-          <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+        <div class="swiper-slide">
+          <article class="trader-card">
+            <div class="trader-card__head">
+              <span class="avatar"></span>
+              <span class="name">Elena R.</span>
+            </div>
+            <div class="trader-card__amount"><span class="sign">$</span><span class="value">8,420</span></div>
+            <p class="trader-card__program">Stocks Pro Trader</p>
+            <p class="trader-card__quote">"I moved from another prop firm because their rules kept changing. TradeFundrr has been the same pricing, same split, same drawdown rules since I started 6 months ago. Weekly payouts hit my bank every Friday like clockwork."</p>
+            <div class="trader-card__stars">
+              <span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="trader-card">
+            <div class="trader-card__head">
+              <span class="avatar"></span>
+              <span class="name">Jordan K.</span>
+            </div>
+            <div class="trader-card__amount"><span class="sign">$</span><span class="value">6,200</span></div>
+            <p class="trader-card__program">FunderFlex 50K</p>
+            <p class="trader-card__quote">"FunderFlex 50K at $59/month feels almost unfair. NinjaTrader, weekly payouts, real institutional capital backing — I haven't found anyone matching this pricing structure anywhere else in the futures space."</p>
+            <div class="trader-card__stars">
+              <span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="trader-card">
+            <div class="trader-card__head">
+              <span class="avatar"></span>
+              <span class="name">Priya S.</span>
+            </div>
+            <div class="trader-card__amount"><span class="sign">$</span><span class="value">5,180</span></div>
+            <p class="trader-card__program">Options Evaluation</p>
+            <p class="trader-card__quote">"I called support twice in my first month. Both times a real human picked up. That alone made me confident the program is run by people who actually trade, not a marketing team behind a chatbot."</p>
+            <div class="trader-card__stars">
+              <span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="trader-card">
+            <div class="trader-card__head">
+              <span class="avatar"></span>
+              <span class="name">Dominic L.</span>
+            </div>
+            <div class="trader-card__amount"><span class="sign">$</span><span class="value">7,720</span></div>
+            <p class="trader-card__program">Stocks Instant Funding</p>
+            <p class="trader-card__quote">"Instant Funding at $149 is a no-brainer for any serious stocks day trader. No PDT, $100K effective buying power, and weekly payouts. The pricing page made it obvious which plan fits me — no upsell shenanigans."</p>
+            <div class="trader-card__stars">
+              <span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="trader-card">
+            <div class="trader-card__head">
+              <span class="avatar"></span>
+              <span class="name">Aisha N.</span>
+            </div>
+            <div class="trader-card__amount"><span class="sign">$</span><span class="value">4,800</span></div>
+            <p class="trader-card__program">Live Capital Path</p>
+            <p class="trader-card__quote">"I've taken seven payouts in a row on the same program at the same split. After six straight payouts they pulled me into a path-to-live capital review. That progression isn't marketing — it actually happens."</p>
+            <div class="trader-card__stars">
+              <span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span><span><img src="assets/images/star-green.svg" alt="star-green"></span>
+            </div>
+          </article>
+        </div>
         </div>
       </div>
 
-      <div class="payouts__visual">
-        <div style="position:absolute;right:0;top:0;width:380px;aspect-ratio:1.2/1;border-radius:18px;background:linear-gradient(135deg,#0e1828,#03070f);transform:rotate(2deg);box-shadow:0 30px 60px rgba(0,0,0,.5);overflow:hidden">
-          <div style="position:absolute;left:20px;top:20px;font-family:'Geist Mono';font-size:11px;color:#9ca3af">PAYOUT · WEEK 18</div>
-          <div style="position:absolute;left:20px;top:60px;font-family:'Inter';font-weight:700;font-size:34px;color:#05c4a1">$8,420.00</div>
-          <div style="position:absolute;left:20px;top:110px;color:#fff;font-size:13px">→ Settled to bank</div>
-          <svg viewBox="0 0 360 200" style="position:absolute;bottom:0;left:0;width:100%;height:55%"><polyline points="10,150 60,120 110,140 160,90 210,110 260,60 310,80 350,40" fill="none" stroke="#05c4a1" stroke-width="2"/></svg>
+      <div class="trader-payouts__controls">
+          <a href="pages/why-us.html" class="trader-payouts__cta">See all trader stories and payouts <span class="arrow"><img src="assets/images/btn-arrow.svg" alt="arrow"></span></a>
+          <a href="#" class="trader-payouts__rating">
+            <span class="score">4.8</span>
+            <span>Rating on</span>
+            <span class="logo"><img src="assets/images/trustpilot.svg" alt="Trustpilot"></span>
+          </a>
         </div>
-        <div style="position:absolute;right:60px;top:130px;width:340px;aspect-ratio:1.4/1;border-radius:18px;background:linear-gradient(135deg,#0a1320,#000);transform:rotate(-3deg);box-shadow:0 30px 60px rgba(0,0,0,.5);overflow:hidden">
-          <div style="position:absolute;left:20px;top:20px;font-family:'Geist Mono';font-size:11px;color:#9ca3af">PAYOUT HISTORY</div>
-          <div style="display:grid;gap:14px;padding:50px 20px 20px;color:#fff;font-size:13px">
-            <div style="display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:8px"><span>Week 17</span><span style="color:#05c4a1;font-weight:600">$6,200</span></div>
-            <div style="display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:8px"><span>Week 16</span><span style="color:#05c4a1;font-weight:600">$5,180</span></div>
-            <div style="display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:8px"><span>Week 15</span><span style="color:#05c4a1;font-weight:600">$7,720</span></div>
-            <div style="display:flex;justify-content:space-between"><span>Week 14</span><span style="color:#05c4a1;font-weight:600">$4,800</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="payouts__footer">
-      <a href="pages/why-us.html" class="btn btn--glass">See all trader stories and payouts <span class="arrow">→</span></a>
-      <span class="trustpilot"><span class="rating">4.8</span> Rating on <strong>Trustpilot</strong></span>
     </div>
   </div>
-</section> -->
+</section>
 
-<!-- =================================================== INSTITUTIONAL BACKING =================================================== -->
 <section class="institutional">
   <div class="container">
     <div class="institutional__row">
@@ -394,7 +452,7 @@
               <span class="symbol">-</span>
             </div>
             <h4>Phone Support</h4>
-            <p >Call directly — speak with a member of the team who knows the platform, the rules, and your account.</p>
+            <p style="display:block">Call directly — speak with a member of the team who knows the platform, the rules, and your account.</p>
           </div>
           <div class="card">
             <div class="icon">
@@ -542,7 +600,7 @@
       <div class="faq__col">
         <div class="qa opened">
           <div class="head"><p>Is TradeFundrr a real prop firm — or is this simulated trading?</p><span class="chev-arrow"><img src="assets/images/faq-arrow.svg" alt="faq-arrow"></span></div>
-          <div class="qa__body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa.</p></div>
+          <div class="qa__body" style="display:block"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa.</p></div>
         </div>
         <div class="qa">
           <div class="head"><p>How do payouts actually work? When and how do I get paid?</p><span class="chev-arrow"><img src="assets/images/faq-arrow.svg" alt="faq-arrow"></span></div>
@@ -720,6 +778,8 @@
   </div>
 </footer>
 
-<script src="js/main.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

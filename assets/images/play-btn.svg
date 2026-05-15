@@ -1,0 +1,35 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-50" y="-50" width="170" height="170"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(25px);clip-path:url(#bgblur_1_55_211_clip_path);height:100%;width:100%"></div></foreignObject><g filter="url(#filter0_i_55_211)" data-figma-bg-blur-radius="50">
+<g clip-path="url(#clip0_55_211)">
+<path d="M0 35C0 15.67 15.67 0 35 0C54.33 0 70 15.67 70 35C70 54.33 54.33 70 35 70C15.67 70 0 54.33 0 35Z" fill="url(#paint0_linear_55_211)"/>
+<path d="M27.1787 47.8636V24.1364L45.8216 36L27.1787 47.8636Z" fill="white"/>
+<g filter="url(#filter1_f_55_211)">
+<circle cx="55" cy="40" r="15" fill="#05C4A1"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_i_55_211" x="-50" y="-50" width="170" height="170" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0196078 0 0 0 0 0.768627 0 0 0 0 0.631373 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_55_211"/>
+</filter>
+<clipPath id="bgblur_1_55_211_clip_path" transform="translate(50 50)"><path d="M0 35C0 15.67 15.67 0 35 0C54.33 0 70 15.67 70 35C70 54.33 54.33 70 35 70C15.67 70 0 54.33 0 35Z"/>
+</clipPath><filter id="filter1_f_55_211" x="0" y="-15" width="110" height="110" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_55_211"/>
+</filter>
+<linearGradient id="paint0_linear_55_211" x1="35" y1="0" x2="35" y2="70" gradientUnits="userSpaceOnUse">
+<stop stop-opacity="0.2"/>
+<stop offset="1" stop-color="#05C4A0" stop-opacity="0.101961"/>
+</linearGradient>
+<clipPath id="clip0_55_211">
+<path d="M0 35C0 15.67 15.67 0 35 0C54.33 0 70 15.67 70 35C70 54.33 54.33 70 35 70C15.67 70 0 54.33 0 35Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

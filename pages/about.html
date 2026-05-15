@@ -14,36 +14,39 @@
 
 <header class="site-header">
   <nav class="navbar" aria-label="Primary">
-    <a href="index.html" class="navbar__logo" aria-label="TradeFundrr home">
+    <a href="../index.html" class="navbar__logo" aria-label="TradeFundrr home">
       <img src="../assets/images/logo.svg" alt="logo">
     </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <div class="navbar__nav">
       <span class="has-sub" tabindex="0" aria-haspopup="true">
         Products
         <span class="arrow"><img src="../assets/images/down-arrow.svg" alt="down-arrow"></span>
         <div class="dropdown" role="menu" >
-          <a href="pages/stocks.html" data-cat="stocks">
+          <a href="stocks.html" data-cat="stocks">
             <span class="thumb"><img src="../assets/images/dropdown-1.png" alt="dropdown"></span>
             <span class="body">
               <span class="row"><span class="title">Stocks</span><span class="arrow-right"><img src="../assets/images/dropdown-arrow-right.svg" alt="dropdown-arrow-right"></span></span>
               <span class="desc">Funded stock trading accounts with $25K+ in institutional capital</span>
             </span>
           </a>
-          <a href="pages/options.html" data-cat="options">
+          <a href="options.html" data-cat="options">
             <span class="thumb"><img src="../assets/images/dropdown-2.png" alt="dropdown"></span>
             <span class="body">
               <span class="row"><span class="title">Options</span><span class="arrow-right"><img src="../assets/images/dropdown-arrow-right.svg" alt="dropdown-arrow-right"></span></span>
               <span class="desc">Funded options accounts — multi-leg strategies, real institutional capital</span>
             </span>
           </a>
-          <a href="pages/pricing.html" data-cat="futures">
+          <a href="pricing.html" data-cat="futures">
             <span class="thumb"><img src="../assets/images/dropdown-3.png" alt="dropdown"></span>
             <span class="body">
               <span class="row"><span class="title">Futures</span><span class="arrow-right"><img src="../assets/images/dropdown-arrow-right.svg" alt="dropdown-arrow-right"></span></span>
               <span class="desc">NinjaTrader-powered futures funded accounts from $39/mo</span>
             </span>
           </a>
-          <a href="pages/pricing.html" data-cat="crypto">
+          <a href="pricing.html" data-cat="crypto">
             <span class="thumb"><img src="../assets/images/dropdown-4.png" alt="dropdown"></span>
             <span class="body">
               <span class="row"><span class="title">Crypto</span><span class="arrow-right"><img src="../assets/images/dropdown-arrow-right.svg" alt="dropdown-arrow-right"></span></span>
@@ -52,12 +55,12 @@
           </a>
         </div>
       </span>
-      <a href="index.html#how-it-works">How It Works</a>
-      <a href="pages/about.html">About</a>
+      <a href="../index.html#how-it-works">How It Works</a>
+      <a href="about.html">About</a>
       <a href="#">Blog</a>
       <a href="#">Login</a>
     </div>
-    <a href="pages/pricing.html" class="btn btn--primary navbar__cta">Get Funded <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
+    <a href="pricing.html" class="btn btn--primary navbar__cta">Get Funded <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
   </nav>
 </header>
 
@@ -126,7 +129,7 @@
             [P3 — When TradeFundrr says 'real capital,' it means capital backed by a firm that is legally accountable for it. When payout time comes, there is a regulated institution behind the obligation — not a marketing company's goodwill. Written to land as insight, not reassurance.]
           </p>
         </div>
-        <a href="pages/about.html" class="btn btn--glass smaller">Learn more about how programs work <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
+        <a href="about.html" class="btn btn--glass smaller">Learn more about how programs work <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
       </div>
 
       <div class="institutional__card">
@@ -145,7 +148,7 @@
 
 
 
-<!-- <section class="programs-section">
+<section class="programs-section">
   <div class="container">
     <div>
       <p class="eyebrow">The programs</p>
@@ -169,23 +172,26 @@
         <p class="lead">Instant Funding gives you immediate access to a funded trading account — no evaluation required. From the moment you activate your account, you're trading real institutional capital.</p>
 
         <div class="steps">
-          <div class="col-rail">
-            <div class="step-num is-active">1</div>
-            <div class="step-num">2</div>
-            <div class="step-num">3</div>
-          </div>
+          
           <div class="col-body">
-            <div class="step">
+            <div class="step active">
+              <div class="counter">
+                <span>1</span>
+              </div>
               <h4>Purchase &amp; Activate</h4>
               <p>Select your Instant Funding account size. Your funded account is activated immediately — you can begin trading on your chosen platform within hours of purchase.</p>
             </div>
             <div class="step">
+              <div class="counter">
+                <span>2</span>
+              </div>
               <h4 class="is-muted">Trade Within the Rules</h4>
-              <p>Trade your strategy within the published Instant Funding rules. Daily loss limit, max drawdown, and trading windows are printed before you sign up — and unchanged after.</p>
             </div>
             <div class="step">
+              <div class="counter">
+                <span>3</span>
+              </div>
               <h4 class="is-muted">Request Your Payout</h4>
-              <p>Eligible accounts request payouts in the trader portal — settled every Friday on the 80/20 split you onboarded with.</p>
             </div>
           </div>
         </div>
@@ -193,100 +199,108 @@
         <div class="key-rules">
           <p class="label">Key rules — instant funding</p>
           <ul>
-            <li>Daily loss limit and max drawdown printed before signup</li>
-            <li>News-trading window rules disclosed and identical for every account</li>
-            <li>Profit split locked at 80/20 — no tier escalation</li>
+            <li>Rule 1, to be confirmed by Jason</li>
+            <li>Rule 2, to be confirmed by Jason</li>
+            <li>Rule 3, to be confirmed by Jason</li>
           </ul>
         </div>
 
         <div class="actions">
-          <a href="pricing.html" class="btn btn--primary">See Instant Funding Programs <span class="arrow">→</span></a>
-          <span class="pill"><span class="ic"></span>Eligible for payout in as few as 5 days</span>
+          <a href="pricing.html" class="btn btn--primary">See Instant Funding Programs <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn"></span></a>
+          <span class="pill"><span><img src="../assets/images/eligible.svg" alt="eligible"></span>Eligible for payout in as few as 5 days</span>
         </div>
       </div>
 
-      <div class="programs-tabs__panel is-hidden" data-panel="evaluation">
-        <p class="lead">The Evaluation Account is the lowest-cost path into a real funded account. Hit a published profit target inside the documented rules, then convert directly to a live institutional account.</p>
+      <div class="programs-tabs__panel"  style="display:none;" data-panel="evaluation">
+        <p class="lead">Instant Funding gives you immediate access to a funded trading account — no evaluation required. From the moment you activate your account, you're trading real institutional capital.</p>
 
         <div class="steps">
-          <div class="col-rail">
-            <div class="step-num is-active">1</div>
-            <div class="step-num">2</div>
-            <div class="step-num">3</div>
-          </div>
+          
           <div class="col-body">
-            <div class="step">
-              <h4>Purchase the Evaluation</h4>
-              <p>Select your Evaluation account size. Lowest entry cost across our programs — published rules, documented profit target.</p>
+            <div class="step active">
+              <div class="counter">
+                <span>1</span>
+              </div>
+              <h4>Purchase &amp; Activate</h4>
+              <p>Select your Instant Funding account size. Your funded account is activated immediately — you can begin trading on your chosen platform within hours of purchase.</p>
             </div>
             <div class="step">
-              <h4 class="is-muted">Hit the profit target</h4>
-              <p>Trade within the published rules until you reach the documented profit target. Most traders clear in 7–14 days.</p>
+              <div class="counter">
+                <span>2</span>
+              </div>
+              <h4 class="is-muted">Trade Within the Rules</h4>
             </div>
             <div class="step">
-              <h4 class="is-muted">Convert to live funding</h4>
-              <p>Once you clear, the account converts to a live institutional account on the same 80/20 weekly-payout structure as Instant Funding.</p>
+              <div class="counter">
+                <span>3</span>
+              </div>
+              <h4 class="is-muted">Request Your Payout</h4>
             </div>
           </div>
         </div>
 
         <div class="key-rules">
-          <p class="label">Key rules — evaluation</p>
+          <p class="label">Key rules — instant funding</p>
           <ul>
-            <li>Documented profit target and time window — published before signup</li>
-            <li>Daily loss limit and max drawdown identical to live funding</li>
-            <li>Discounted retest if you don't clear on the first attempt</li>
+            <li>Rule 1, to be confirmed by Jason</li>
+            <li>Rule 2, to be confirmed by Jason</li>
+            <li>Rule 3, to be confirmed by Jason</li>
           </ul>
         </div>
 
         <div class="actions">
-          <a href="pricing.html" class="btn btn--primary">See Evaluation Programs <span class="arrow">→</span></a>
-          <span class="pill"><span class="ic"></span>Most traders clear in 7–14 days</span>
+          <a href="pricing.html" class="btn btn--primary">See Instant Funding Programs <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn"></span></a>
+          <span class="pill"><span><img src="../assets/images/eligible.svg" alt="eligible"></span>Eligible for payout in as few as 5 days</span>
         </div>
       </div>
 
-      <div class="programs-tabs__panel is-hidden" data-panel="live">
-        <p class="lead">Consistent performers across Instant Funding and Evaluation programs are reviewed for the path to live T3 Trading Group capital — scalable to $1M+ in real institutional buying power.</p>
+      <div class="programs-tabs__panel"  style="display:none;" data-panel="live">
+        <p class="lead">Instant Funding gives you immediate access to a funded trading account — no evaluation required. From the moment you activate your account, you're trading real institutional capital.</p>
 
         <div class="steps">
-          <div class="col-rail">
-            <div class="step-num is-active">1</div>
-            <div class="step-num">2</div>
-            <div class="step-num">3</div>
-          </div>
+          
           <div class="col-body">
-            <div class="step">
-              <h4>Build a track record</h4>
-              <p>Trade an Instant Funding or Evaluation account through several payout cycles to establish documented performance.</p>
+            <div class="step active">
+              <div class="counter">
+                <span>1</span>
+              </div>
+              <h4>Purchase &amp; Activate</h4>
+              <p>Select your Instant Funding account size. Your funded account is activated immediately — you can begin trading on your chosen platform within hours of purchase.</p>
             </div>
             <div class="step">
-              <h4 class="is-muted">Get reviewed for Pro / Elite</h4>
-              <p>Consistent traders are invited to apply for Pro Trader (85/15) and Elite (90/10) tiers with raised buying power.</p>
+              <div class="counter">
+                <span>2</span>
+              </div>
+              <h4 class="is-muted">Trade Within the Rules</h4>
             </div>
             <div class="step">
-              <h4 class="is-muted">Scale to $1M+ in live capital</h4>
-              <p>Top performers route directly to T3 Trading Group's live institutional desk with scaled position size and direct desk routing.</p>
+              <div class="counter">
+                <span>3</span>
+              </div>
+              <h4 class="is-muted">Request Your Payout</h4>
             </div>
           </div>
         </div>
 
         <div class="key-rules">
-          <p class="label">Key rules — path to live</p>
+          <p class="label">Key rules — instant funding</p>
           <ul>
-            <li>Track record reviewed against documented criteria — not at firm discretion</li>
-            <li>Tier upgrades raise the split, never reduce it</li>
-            <li>Scaling rules published; no surprise demotion of buying power</li>
+            <li>Rule 1, to be confirmed by Jason</li>
+            <li>Rule 2, to be confirmed by Jason</li>
+            <li>Rule 3, to be confirmed by Jason</li>
           </ul>
         </div>
 
         <div class="actions">
-          <a href="pricing.html" class="btn btn--primary">See all programs <span class="arrow">→</span></a>
-          <span class="pill"><span class="ic"></span>Direct desk routing on Pro &amp; Elite</span>
+          <a href="pricing.html" class="btn btn--primary">See Instant Funding Programs <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn"></span></a>
+          <span class="pill"><span><img src="../assets/images/eligible.svg" alt="eligible"></span>Eligible for payout in as few as 5 days</span>
         </div>
       </div>
+
+      
     </div>
   </div>
-</section> -->
+</section>
 
 
 
@@ -323,7 +337,7 @@
         T3 institutional backing, and real human support.
       </p>
       <div class="btn-row">
-        <a href="pages/pricing.html" class="btn btn--primary">View all plans <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
+        <a href="pricing.html" class="btn btn--primary">View all plans <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
         <div class="tick-row">
           <span class="tick"><span><img src="../assets/images/list-mark.svg" alt="list-mark"></span> No long-term commitment</span>
           <span class="tick"><span><img src="../assets/images/list-mark.svg" alt="list-mark"></span> Clear rules before you buy</span>
@@ -482,7 +496,7 @@
               <span class="symbol">-</span>
             </div>
             <h4>Phone Support</h4>
-            <p>Call directly and speak with a member of the team.</p>
+            <p style="display:block;">Call directly and speak with a member of the team.</p>
           </div>
           <div class="card">
             <div class="icon">
@@ -528,7 +542,7 @@
         TradeFundrr funded accounts are backed by T3 Trading Group, an SEC-registered broker-dealer. Weekly payouts, transparent rules, and real humans ready to help.
       </p>
       <div class="btn-row">
-        <a href="pages/pricing.html" class="btn btn--primary">View all plans <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
+        <a href="pricing.html" class="btn btn--primary">View all plans <span class="arrow"><img src="../assets/images/btn-arrow.svg" alt="btn-arrow"></span></a>
         <a href="#" class="btn btn--glass">Talk to someone on the team first</a>
       </div>
       <div class="tick-row">
@@ -568,7 +582,7 @@
   <div class="container">
     <div class="site-footer__top">
       <div class="site-footer__brand">
-        <a href="index.html" class="navbar__logo" aria-label="TradeFundrr">
+        <a href="../index.html" class="navbar__logo" aria-label="TradeFundrr">
           <img src="../assets/images/logo.svg" alt="logo">
         </a>
         <p>Professional funded tracking backed by T3 Trading Group, an SEC registered broker-dealer. Trade with institutional capital.</p>
@@ -621,18 +635,18 @@
         <div class="site-footer__col">
           <h5>Products</h5>
           <ul>
-            <li><a href="pages/stocks.html">Stocks</a></li>
-            <li><a href="pages/options.html">Options</a></li>
-            <li><a href="pages/pricing.html">Futures</a></li>
-            <li><a href="pages/pricing.html">Crypto</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="options.html">Options</a></li>
+            <li><a href="pricing.html">Futures</a></li>
+            <li><a href="pricing.html">Crypto</a></li>
           </ul>
         </div>
         <div class="site-footer__col">
           <h5>Company</h5>
           <ul>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="index.html#how-it-works">How It Works</a></li>
-            <li><a href="pages/why-us.html">Why Us</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="../index.html#how-it-works">How It Works</a></li>
+            <li><a href="why-us.html">Why Us</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Careers</a></li>
           </ul>
@@ -658,7 +672,7 @@
   </div>
 </footer>
 
-
-<script src="../js/main.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
