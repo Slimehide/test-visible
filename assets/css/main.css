@@ -575,8 +575,8 @@ h6 {
     border-radius: 20px;
     background: hsla(0, 0%, 100%, 0.04);
     border: 1px solid hsla(0, 0%, 100%, 0.1);
-    backdrop-filter: blur(100px);
-    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
     opacity: 0;
     visibility: hidden;
@@ -833,7 +833,7 @@ h6 {
     border-radius: 20px;
     border: 1px solid hsla(0, 0%, 100%, 0.1);
     background: hsla(0, 0%, 100%, 0.04);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(30px);
     padding: 45px 40px;
     display: flex;
     flex-direction: column;
@@ -1263,7 +1263,7 @@ h6 {
     padding: 40px 45px;
     background: linear-gradient(180deg, rgba(5, 196, 161, 0.1) 0%, rgba(2, 124, 196, 0.1) 100%);
     box-shadow: 0 0 30px rgba(4, 159, 180, 0.2);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(30px);
 }
 .institutional__card .badge {
     width: 60px;
@@ -1774,7 +1774,7 @@ h6 {
     background: hsla(0, 0%, 100%, 0.04);
     border: 2px solid hsla(0, 0%, 100%, 0.1);
     border-bottom: 0;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(30px);
     cursor: pointer;
     transition: all 0.2s;
 }
@@ -1795,7 +1795,7 @@ h6 {
     border-radius: 0 20px 20px 20px;
     background: linear-gradient(180deg, rgba(5, 196, 161, 0.1) 0%, rgba(2, 124, 196, 0.1) 100%);
     box-shadow: 0 0 60px rgba(4, 159, 180, 0.2);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(30px);
 }
 .programs-tabs__panel.is-hidden {
     display: none;
@@ -2018,7 +2018,7 @@ h6 {
     border-radius: 20px;
     border: 1px solid hsla(0, 0%, 100%, 0.1);
     background: hsla(0, 0%, 100%, 0.04);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(30px);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -2226,7 +2226,7 @@ h6 {
     border-radius: 20px;
     background: linear-gradient(180deg, rgba(5, 196, 161, 0.1) 0%, rgba(2, 124, 196, 0.1) 100%);
     box-shadow: 0 0 60px rgba(4, 159, 180, 0.2);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(30px);
     max-width: 620px;
 }
 .help-choose__result .pill {
@@ -2288,7 +2288,7 @@ h6 {
     border-radius: 20px;
     background: linear-gradient(180deg, rgba(5, 196, 161, 0.1) 0%, rgba(2, 124, 196, 0.1) 100%);
     box-shadow: 0 0 30px rgba(4, 159, 180, 0.2);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(30px);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -2356,7 +2356,7 @@ h6 {
     border: 1px solid hsla(0, 0%, 100%, 0.1);
     border-radius: 20px;
     background: hsla(0, 0%, 100%, 0.04);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(30px);
     display: grid;
     grid-template-columns: 30px 1fr;
     gap: 30px;
@@ -3756,7 +3756,7 @@ footer.site-footer{
 .platforms .double__box .box{
     border-radius: 20px;
     border:1px solid rgba(255,255,255,.1);
-    backdrop-filter:blur(200px);
+    backdrop-filter:blur(40px);
     padding:35px 30px;
     background-color:rgba(255,255,255,.04);
 }
@@ -4109,7 +4109,7 @@ footer.site-footer{
     border:2px solid #05C4A1;
     border-radius: 20px;
     box-shadow:0px 0px 20px rgba(4,159,189,.2);
-    backdrop-filter:blur(200px);
+    backdrop-filter:blur(40px);
     background:linear-gradient(to bottom , rgba(5,196,161,.24) , rgba(2,124,196,.24));
 }
 .article .container .media{
@@ -4405,7 +4405,7 @@ footer.site-footer{
     padding:10px;
     background-color:rgba(255,255,255,.04);
     border:1px solid rgba(255,255,255,.1);
-    backdrop-filter:blur(200px);
+    backdrop-filter:blur(40px);
     border-radius: 20px;
 }
 .platforms__articles .double .media{
@@ -6347,8 +6347,25 @@ section.platforms{
 .rules__box.short{
     max-width: 1010px;
 }
-
+.trader-payouts__head .lead{
+    max-width: 640px;
+}
+.cta-block__inner.longer{
+    max-width: 1040px;
+}
+.why__us .h2{
+    margin-bottom: 30px;
+}
+.why__us p.lead{
+    color:#fff;
+}
+.why__us .grid{
+    margin-top: 80px;
+}
 @media (max-width: 1140px) {
+    .why__us .grid{
+        margin-top: 40px;
+    }
     .trader-payouts__row {
         grid-template-columns: 1fr;
         gap: 50px;
@@ -6365,7 +6382,6 @@ section.platforms{
     .trader-payouts__cta { font-size: 14px; padding: 0 18px; min-height: 44px; }
     .trader-payouts__rating { font-size: 14px; }
 }
-
 
 .trader-payouts__row{
     display: flex;
@@ -6904,7 +6920,7 @@ section.platforms{
     }
 }
 .real-support__inner{
-    max-width: 600px;
+    max-width: 480px;
     margin-left: auto;
     width: 100%;
 }
@@ -7010,6 +7026,14 @@ section.platforms{
     background-size: cover;
     background-position: center;
  }
+.story__row{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero__title.smaller{
+    font-size: 58px;
+}
 @media (max-width: 1140px){
     .help__me--choose .form__box .step>.title>h2{
         font-size: 19px;
@@ -7518,6 +7542,9 @@ section.platforms{
         margin-bottom: 15px;
         font-size: 14px;
     }
+    .hero__text{
+        max-width: 100%;
+    }
 
 }
 .comparison__list.comparison__list--bad li span , .comparison__card .comparison__list li span{
@@ -7652,6 +7679,21 @@ section.platforms{
     border-bottom:2px solid rgba(255,255,255,.1);
 }
 @media (max-width: 767px){
+    .rules .lead br{
+        display: none;
+    }
+    .payout__proof .h2 br{
+        display: none;
+    }
+    .why__us .h2{
+        margin-bottom: 20px;
+    }
+    .why__us p.lead br{
+        display: none;
+    }
+    .hero__title.smaller{
+        font-size: 36px!important;
+    }
     .help__me--choose .recommend__plan .btns{
         flex-direction: column;
         align-items: center;
@@ -8117,7 +8159,7 @@ section.platforms{
         max-width: 18px;
     }
     .hero__text{
-        max-width: 540px;
+        max-width: 100%;
     }
     .tick-row{
         gap:8px;
@@ -8172,7 +8214,16 @@ section.platforms{
 .h2 , .cta-block__title , .outer__newsletter h2{
     text-transform: capitalize;
 }
+.comparison__head.longer{
+    max-width: 1040px;
+}
+.comparison .lead{
+    max-width: 640px;
+}
 @media (max-width: 480px){
+    .comparison .btn.smaller{
+        font-size: 12px;
+    }
     .plan__box .hyperlinks__box{
         grid-template-columns: 1fr;
         margin-bottom: 20px;
@@ -8413,9 +8464,41 @@ section.platforms{
 .nav-toggle.is-active span:nth-child(2) { opacity: 0; }
 .nav-toggle.is-active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+.sound-familiar .sound-familiar__card ul li>span img{
+    min-width: 18px;
+}
 body.no-scroll { overflow: hidden; }
 
+.rules  p.lead{
+    max-width: 550px;
+}
+.hero.long-one.flex .switcher{
+    margin-top: 0px;
+}
+.hero .video__wrapper{
+    margin-top: 15px;
+}
+.verified__viewers p.lead{
+    max-width: 650px;
+    color:#fff;
+}
+.reassurance.double .reassurance__grid{
+    grid-template-columns: repeat(2 ,1fr);
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sound-familiar__title{
+    font-size: 36px;
+    max-width: 670px;
+}
+.sound-familiar__card{
+    max-width: 670px;
+}
 @media (max-width: 1140px) {
+    .hero__title.smaller{
+        font-size: 48px;
+    }
     .nav-toggle { display: inline-flex; margin-left: auto; }
     .nav-toggle{
         border-radius: 250px;
@@ -8571,4 +8654,78 @@ body.no-scroll { overflow: hidden; }
     .navbar__logo img { max-height: 32px; }
     .nav-toggle { width: 40px; height: 40px; }
     .navbar > .navbar__cta { display: none; }
+}
+
+/* ===== Scroll-performance overrides ===== */
+/* Isolate each major section so paints / blur compositing stay local instead of cascading */
+.hero,
+.reassurance,
+.comparison,
+.markets,
+.how-it-works,
+.trader-payouts,
+.institutional,
+.real-support,
+.cta-block,
+.plans,
+.numbers,
+.faq,
+.get-started,
+.platforms,
+.newsletter__wrapper,
+.site-footer {
+    contain: layout paint style;
+}
+
+/* Skip rendering for off-screen sections (modern browsers); also reserves space so layout doesn't shift */
+.reassurance,
+.comparison,
+.markets,
+.trader-payouts,
+.institutional,
+.real-support,
+.plans,
+.numbers,
+.faq,
+.platforms,
+.newsletter__wrapper,
+.site-footer {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 800px;
+}
+
+/* The hero background is a 44 KB SVG with 29 filters / 34 gaussian blurs — promote it to its own
+   compositor layer so the browser rasterizes it once instead of every scroll frame */
+.hero {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Mobile / low-power devices: backdrop-filter is the single biggest scroll-jank cause. Drop it on touch
+   devices where it costs the most and benefits the least (small screens make the blur barely visible). */
+@media (hover: none) and (pointer: coarse) {
+    .navbar::before,
+    .navbar .has-sub .dropdown,
+    .card,
+    .btn--glass,
+    .comparison__card,
+    .markets__card,
+    .plans__card,
+    .real-support__cards .card,
+    .platforms .double__box .box,
+    .qa,
+    .faq .qa {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+}
+
+/* Honor user reduced-motion / reduced-transparency: kill blur compositing entirely */
+@media (prefers-reduced-transparency: reduce), (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
 }
